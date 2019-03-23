@@ -1,3 +1,102 @@
-<p>
-  listarventas works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CSTART</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Inventario
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Productos</a>
+                    <a class="dropdown-item" href="#">Nuevo Producto</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Categorias</a>
+                    <a class="dropdown-item" href="#">Nueva Categoria</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Usuarios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Usuarios</a>
+                    <a class="dropdown-item" href="#">Nuevo Usuario</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Proveedores
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Proveedores</a>
+                    <a class="dropdown-item" href="#">Nuevo Proveedor</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Perfil
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Mi cuenta</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                </div>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-"></div>
+        <form id="form1" class="col-12" enctype="multipar/form-data">
+
+            <h2 class="font-weight-bold">Ventas Realizadas.</h2>
+
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>MONTO</th>
+                        <th>FECHA</th>
+                        <th>VENDEDOR</th>
+                        <th>DESCRIPCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>$100.00</td>
+                        <td>2019-03-04 16:22:40</td>
+                        <td>Brenda Guevara</td>
+                        <td>3-Pinturas Canvas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="resultado2"></div>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div id="resultado" class="alert alert-light" role="alert">
+            </div>
+        </div>
+    </div>
+</div>

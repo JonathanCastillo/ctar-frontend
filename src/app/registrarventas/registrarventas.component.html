@@ -1,3 +1,106 @@
-<p>
-  registrarventas works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CSTART</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Inventario
+                      </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Productos</a>
+                    <a class="dropdown-item" href="#">Nuevo Producto</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Categorias</a>
+                    <a class="dropdown-item" href="#">Nueva Categoria</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuarios
+                      </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Usuarios</a>
+                    <a class="dropdown-item" href="#">Nuevo Usuario</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Proveedores
+                      </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Ver Proveedores</a>
+                    <a class="dropdown-item" href="#">Nuevo Proveedor</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Perfil
+                          </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Mi cuenta</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                </div>
+            </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <form id="form1" class="col-6" enctype="multipar/form-data">
+            <h2 class="font-weight-bold">Registrar Venta.</h2>
+            <div class="form-group">
+                <label for="Nombres">Cliente</label>
+                <input type="text" class="form-control" id="Nombre_Cliente" required aria-describedby="emailHelp" placeholder="Nombre del cliente">
+                <small id="Nombre" class="form-text text-muted">Ingrese el nombre del cliente.</small>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="Vendedor">Vendedor</label>
+                        <select class="form-control" id="Vendedor">
+                      <option value="Reservado">Marelyn Arias</option>
+                      <option value="A la venta">Jonathan Castillo</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellidos">Total</label>
+                        <input type="text" class="form-control" id="Apellidos" required aria-describedby="emailHelp" placeholder="Total de la venta">
+                        <small id="Nombre" class="form-text text-muted">Ingrese el total de la venta.</small>
+                        <div class="form-group">
+                            <label for="Email">Descripcion</label>
+                            <div class="form-group shadow-textarea">
+                                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Agregue una descripcion de los productos que cancela"></textarea>
+                                <small id="Descripcion" class="form-text text-muted">Agregue una descripcion de los productos que cancela.</small>
+                            </div>
+                            <div class="form-group">
+                                <input type="button" onclick="RegistrarVenta()" class="btn btn-outline-success" value="Guardar" />
+                                <input type="button" onclick="RegistrarVenta()" class="btn btn-outline-danger" value="Cancelar" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="row">
+                <div id="resultado2"></div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div id="resultado" class="alert alert-light" role="alert">
+                    </div>
+                </div>
+            </div>
+        </div>

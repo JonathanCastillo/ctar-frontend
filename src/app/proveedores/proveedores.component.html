@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">CSTART</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -12,8 +12,8 @@
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Inventario
-                </a>
+                    Inventario
+                  </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Ver Productos</a>
                     <a class="dropdown-item" href="#">Nuevo Producto</a>
@@ -24,8 +24,8 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Usuarios
-                </a>
+                    Usuarios
+                  </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Ver Usuarios</a>
                     <a class="dropdown-item" href="#">Nuevo Usuario</a>
@@ -33,8 +33,8 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Proveedores
-                </a>
+                    Proveedores
+                  </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Ver Proveedores</a>
                     <a class="dropdown-item" href="#">Nuevo Proveedor</a>
@@ -42,8 +42,8 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Perfil
-                    </a>
+                        Perfil
+                      </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Mi cuenta</a>
                     <a class="dropdown-item" href="#">Cerrar Sesion</a>
@@ -62,37 +62,57 @@
         <div class="col-3"></div>
         <form id="form1" class="col-6" enctype="multipar/form-data">
 
-            <h2 class="font-weight-bold">Agregar Categoria</h2>
+            <h2 class="font-weight-bold">Nuevo proveedor.</h2>
 
             <div class="form-group">
                 <label for="Nombres">Nombres</label>
-                <input type="text" class="form-control" id="Categoria" required aria-describedby="emailHelp" placeholder="Nombre de la categoria">
-                <small id="Nombre" class="form-text text-muted">Ingrese el nombre de la categoria.</small>
-                <div class="form-group">
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Imagen del producto</label>
-                        <input type="file" class="form-control-file" id="imagen">
-                    </div>
-                    <label for="Email">Descripcion</label>
-                    <div class="form-group shadow-textarea">
-                        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Agregue una descripcion"></textarea>
-                        <small id="Descripcion" class="form-text text-muted">Agregue una descripcion.</small>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="button" onclick="RegistrarProveedor()" class="btn btn-outline-success" value="Guardar" />
-                    </div>
-
-                </div>
+                <input type="text" class="form-control" id="Nombres" required aria-describedby="emailHelp" placeholder="Nombre del proveedor">
+                <small id="Nombre" class="form-text text-muted">Ingrese el nombre del proveedor.</small>
             </div>
+            <div class="form-group">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="Apellidos" required aria-describedby="emailHelp" placeholder="Apellido del proveedor">
+                <small id="Nombre" class="form-text text-muted">Ingrese el apellido del proveedor.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Imagen de la empresa</label>
+                <input type="file" class="form-control-file" id="FotoProveedor">
+            </div>
+            <div class="form-group">
+                <label for="Empresa">Empresa</label>
+                <input type="text" class="form-control" id="Empresa" required aria-describedby="emailHelp" placeholder="Empresa">
+                <small id="Empresa" class="form-text text-muted">Ingrese el nombre de la empresa.</small>
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Direccion</label>
+                <input type="text" class="form-control" id="Direccion" required aria-describedby="emailHelp" placeholder="Direccion">
+                <small id="Direccion" class="form-text text-muted">Ingrese el domicilio de la empresa.</small>
+            </div>
+            <div class="form-group">
+                <label for="Telefono">Telefono</label>
+                <input type="text" class="form-control" id="Telefono" required aria-describedby="emailHelp" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" required aria-describedby="emailHelp" placeholder="Email">
+            </div>
+
+
+            <div class="form-group">
+                <input type="button" onclick="RegistrarProveedor()" class="btn btn-outline-success" value="Guardar" />
+            </div>
+
         </form>
-        <div class="container">
-            <div class="row">
-                <div id="resultado2"></div>
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <div id="resultado" class="alert alert-light" role="alert">
-                    </div>
-                </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="resultado2"></div>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div id="resultado" class="alert alert-light" role="alert">
             </div>
         </div>
+    </div>
+</div>
