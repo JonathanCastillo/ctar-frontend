@@ -1,3 +1,71 @@
-<p>
-  registrarusuario works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <form id="form1" class="col-6" enctype="multipar/form-data">
+
+            <h2 class="font-weight-bold">Nuevo usuario.</h2>
+
+            <div class="form-group">
+                <label for="Nombres">Nombres</label>
+                <input type="text" class="form-control" id="Nombres" required aria-describedby="emailHelp" placeholder="Nombre del usuario">
+                <small id="Nombre" class="form-text text-muted">Ingrese el nombre del usuario.</small>
+            </div>
+            <div class="form-group">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="Apellidos" required aria-describedby="emailHelp" placeholder="Apellido del usuario">
+                <small id="Nombre" class="form-text text-muted">Ingrese el apellido del usuario.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Foto Perfil</label>
+                <input type="file" class="form-control-file" id="FotoPerfil">
+            </div>
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" class="form-control" id="Username" required aria-describedby="emailHelp" placeholder="Username">
+                <small id="Username" class="form-text text-muted">Ingrese el username.</small>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" required aria-describedby="emailHelp" placeholder="Contraseña">
+                <small id="Password" class="form-text text-muted">Ingrese la contraseña.</small>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="TipoUsuario">Tipo de usuario</label>
+                    <select class="form-control" id="TipoUsuario">
+                            <option value="Vendedor">Vendedor</option>
+                            <option value="Administrador">Administrador</option>
+                          </select>
+                </div>
+                <label for="Direccion">Direccion</label>
+                <input type="text" class="form-control" id="Direccion" required aria-describedby="emailHelp" placeholder="Direccion">
+                <small id="Direccion" class="form-text text-muted">Ingrese el domicilio de la empleado.</small>
+            </div>
+            <div class="form-group">
+                <label for="Telefono">Telefono</label>
+                <input type="text" class="form-control" id="Telefono" required aria-describedby="emailHelp" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" required aria-describedby="emailHelp" placeholder="Email">
+            </div>
+
+
+            <div class="form-group">
+                <input type="button" onclick="RegistrarProveedor()" class="btn btn-outline-success" value="Guardar" />
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="resultado2"></div>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <div id="resultado" class="alert alert-light" role="alert">
+            </div>
+        </div>
+    </div>
+</div>
