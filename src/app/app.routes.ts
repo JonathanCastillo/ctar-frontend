@@ -7,6 +7,9 @@ import { RegistrarcategoriasComponent } from './registrarcategorias/registrarcat
 import { RegistrarventasComponent } from './registrarventas/registrarventas.component';
 import { VercategoriasComponent } from './vercategorias/vercategorias.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
+import { RegistrarusuarioComponent } from './registrarusuario/registrarusuario.component';
+
 const appRoutes: Routes = [
     { path : 'login', component : LoginComponent },
     { path : 'users', component : ListarusuariosComponent },
@@ -15,6 +18,8 @@ const appRoutes: Routes = [
     { path : 'addsale', component : RegistrarventasComponent },
     { path : 'viewcat', component : VercategoriasComponent },
     { path : 'providers', component : ProveedoresComponent },
+    { path : 'addproducts', component : AgregarproductoComponent},
+    { path : 'adduser', component : RegistrarusuarioComponent},
     { path : 'home', component : HomeComponent }
 ];
 export const APP_ROUTES = RouterModule.forRoot(appRoutes)
