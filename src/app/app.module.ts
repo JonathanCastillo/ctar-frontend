@@ -14,6 +14,8 @@ import { ListarventasComponent } from './listarventas/listarventas.component';
 import { HomeComponent } from './home/home.component';
 import { APP_ROUTES } from './app.routes';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { RegistrarusuarioComponent } from './registrarusuario/registrarusuario.component';
+import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ProveedoresComponent } from './proveedores/proveedores.component';
     RegistrarcategoriasComponent,
     RegistrarventasComponent,
     ListarventasComponent,
-    ProveedoresComponent
+    ProveedoresComponent,
+    RegistrarusuarioComponent,
+    AgregarproductoComponent
   ],
   imports: [
     BrowserModule, APP_ROUTES,
