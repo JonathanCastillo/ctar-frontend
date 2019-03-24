@@ -1,3 +1,66 @@
-<p>
-  agregarproducto works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <form id="form1" class="col-6" enctype="multipar/form-data">
+            <h2 class="font-weight-bold">Nuevo producto.</h2>
+            <div class="form-group">
+                <label for="Nombre">Nombre</label>
+                <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp" placeholder="Nombre del producto">
+                <small id="Nombre" class="form-text text-muted">Ingrese el nombre del producto.</small>
+            </div>
+            <div class="form-group">
+                <label for="Categoria">Categoría</label>
+                <select class="form-control" id="Categoria">
+                <option value="Vestuario">Vestuario</option>
+                <option value="Calzado">Calzado</option>
+                <option value="Calzado">Llaveros</option>
+                <option value="Artesanias">Artesanias</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Imagen del producto</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="Descripcion">Descripción</label>
+                <textarea type="text" class="form-control" id="Descripcion" placeholder="">
+              </textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="PrecioCompra">Precio de compra</label>
+                <input type="number" class="form-control" id="PrecioCompra" step="any" aria-describedby="emailHelp" placeholder="Precio de compra" />
+                <small id="PrecioCompra" class="form-text text-muted">Ingrese el precio de compra en dolares.</small>
+            </div>
+            <div class="form-group">
+                <label for="PrecioVenta">Precio de venta</label>
+                <input type="number" class="form-control" id="PrecioVenta" step="any" aria-describedby="emailHelp" placeholder="Precio de venta">
+                <small id="PrecioVenta" class="form-text text-muted">Ingrese el precio de venta en dolares.</small>
+            </div>
+            <div class="form-group">
+                <label for="Disponible">Estado</label>
+                <select class="form-control" id="Disponible">
+                <option value="A la venta">A la venta</option>
+                <option value="Reservado">Reservado</option>
+                <option value="No Disponible">No disponible</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="Proveedor">Proveedor</label>
+                <select class="form-control" id="Proveedor">
+                <option value="Sammia">Sammia</option>
+                <option value="Lido">Lido</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <input type="button" onclick="" class="btn btn-outline-success" value="Guardar" />
+            </div>
+
+        </form>
+
+    </div>
+</div>
