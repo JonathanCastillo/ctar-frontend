@@ -5,64 +5,19 @@
         <div class="col-12" id="MuestraProductos">
             <h2 class="font-weight-bold">EL CHUNCHE</h2>
             <div class="card-group">
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
+                <div class="card" *ngFor="let articulo of articulos">
+                    <img class="card-img-top" [src]="articulo.img" class="card-img-top
+                    img-fluid" [alt]="articulo.nombre">
                     <div class="card-body">
-                        <h5 class="card-title">Blusa de tela</h5>
-                        <p class="card-text">Blusa de tela marca Remma, hecha en El Salvador con materiales de alto nivel.</p>
+                        <h5 class="card-title">{{ articulo.nombre }}</h5>
+                        <p class="card-text">{{ articulo.descripcion }}</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <h3><span class="badge badge-pill badge-success">Precio: $40.00</span></h3>
+                        <h3><span class="badge badge-pill badge-success">{{
+                            articulo.precio }}</span></h3>
 
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Botella de licor</h5>
-                        <p class="card-text">Botella de licor marca Venado, 5000 ml con 15% de alchohol.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <h3><span class="badge badge-pill badge-success">Precio: $15.00</span></h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Bolso tipico</h5>
-                        <p class="card-text">Bolso tipico marca Mallet, hecho con materiales de alta calidad.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <h3><span class="badge badge-pill badge-success">Precio: $20.00</span></h3>
-                    </div>
-                </div>
-                <div class="card-group">
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Blusa de tela</h5>
-                            <p class="card-text">Blusa de tela marca Remma, hecha en El Salvador con materiales de alto nivel.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <h3><span class="badge badge-pill badge-success">Precio: $40.00</span></h3>
 
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Botella de licor</h5>
-                            <p class="card-text">Botella de licor marca Venado, 5000 ml con 15% de alchohol.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <h3><span class="badge badge-pill badge-success">Precio: $15.00</span></h3>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Bolso tipico</h5>
-                            <p class="card-text">Bolso tipico marca Mallet, hecho con materiales de alta calidad.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <h3><span class="badge badge-pill badge-success">Precio: $20.00</span></h3>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <script>

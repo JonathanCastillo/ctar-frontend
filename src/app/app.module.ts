@@ -16,7 +16,7 @@ import { APP_ROUTES } from './app.routes';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { RegistrarusuarioComponent } from './registrarusuario/registrarusuario.component';
 import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
-
+import { ArticulosService } from './services/articulos.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { AgregarproductoComponent } from './agregarproducto/agregarproducto.comp
   imports: [
     BrowserModule, APP_ROUTES,
   ],
-  providers: [],
+  providers: [ArticulosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
