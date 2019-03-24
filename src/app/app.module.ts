@@ -22,7 +22,6 @@ import { AgregarproductoComponent } from './agregarproducto/agregarproducto.comp
   declarations: [
     AppComponent,
     NopagefoundComponent,
-    ProveedoresComponent,
     LoginComponent,
     HomeComponent,
     PagesComponent,
