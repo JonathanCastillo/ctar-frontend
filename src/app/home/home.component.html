@@ -6,8 +6,7 @@
             <h2 class="font-weight-bold">EL CHUNCHE</h2>
             <div class="card-group">
                 <div class="card" *ngFor="let articulo of articulos">
-                    <img class="card-img-top" [src]="articulo.img" class="card-img-top
-                    img-fluid" [alt]="articulo.nombre">
+                    <img class="img" height="250px" [src]="articulo.img" class="img" [alt]="articulo.nombre" />
                     <div class="card-body">
                         <h5 class="card-title">{{ articulo.nombre }}</h5>
                         <p class="card-text">{{ articulo.descripcion }}</p>
