@@ -1,4 +1,5 @@
-<div class="container">
+<!----
+    <div class="container">
     <div class="row">
         <div class="col-"></div>
         <form id="form1" class="col-12" enctype="multipar/form-data">
@@ -24,6 +25,55 @@
                         <td>Vendedor</td>
                         <td>22222222</td>
                         <td>Activo</td>
+                        <td>
+                            <button class="btn btn-outline-success" type=" submit">Editar</button>
+                            <button class="btn btn-outline-danger" type="submit">Desactivar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
+
+    </div>
+</div>
+<div class="container ">
+    <div class="row ">
+        <div id="resultado2 "></div>
+        <div class="col-3 "></div>
+        <div class="col-6 ">
+            <div id="resultado " class="alert alert-light " role="alert ">
+            </div>
+        </div>
+    </div>
+</div>
+/-->
+<div class="container">
+    <div class="row">
+        <div class="col-"></div>
+        <form id="form1" class="col-12" enctype="multipar/form-data">
+
+            <h2 class="font-weight-bold">Listar Usuarios</h2>
+
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>EMPLEADO</th>
+                        <th>CARGO</th>
+                        <th>CONTACTO</th>
+                        <th>ESTADO</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuarios of usuarios">
+                        <td>{{ usuarios.id }}</td>
+                        <td>{{ usuarios.nombre }}</td>
+                        <td>{{ usuarios.tipo }}</td>
+                        <td>{{ usuarios.email }}</td>
+                        <td>{{ usuarios.estado }}</td>
                         <td>
                             <button class="btn btn-outline-success" type=" submit">Editar</button>
                             <button class="btn btn-outline-danger" type="submit">Desactivar</button>

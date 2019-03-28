@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriasService } from '../services/categorias.service';
 
 @Component({
   selector: 'app-vercategorias',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VercategoriasComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private categoriasService:CategoriasService) { }
+  categorias: any[] = [];
   ngOnInit() {
+    this.categorias = this.categoriasService.getCategorias();
+    console.log(this.categorias);
   }
 
 }

@@ -17,6 +17,8 @@ import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { RegistrarusuarioComponent } from './registrarusuario/registrarusuario.component';
 import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
 import { ArticulosService } from './services/articulos.service';
+import { CategoriasService } from './services/categorias.service';
+import { UsuariosService } from './services/usuarios.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { ArticulosService } from './services/articulos.service';
   imports: [
     BrowserModule, APP_ROUTES,
   ],
-  providers: [ArticulosService],
+  providers: [ArticulosService,CategoriasService,UsuariosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

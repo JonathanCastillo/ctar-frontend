@@ -2,97 +2,40 @@
     <div class="row">
 
         <div class="col-3"></div>
-        <div class="col-12" id="#">
-
-            <h2 class="font-weight-bold">Categorias</h2>
-
+        <div class="col-12" id="MuestraProductos">
+            <h2 class="font-weight-bold">EL CHUNCHE</h2>
             <div class="card-group">
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
+                <div class="card" *ngFor="let categorias of categorias">
+                    <img class="img" height="250px" [src]="categorias.img" class="img" [alt]="categorias.nombre" />
                     <div class="card-body">
-                        <h5 class="card-title">Bisuteria</h5>
-                        <p class="card-text">Pulseras con el mejor hilo y de todo tipo 100% artesanales</p>
+                        <h5 class="card-title">{{ categorias.nombre }}</h5>
+                        <p class="card-text">{{ categorias.descripcion }}</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <button type="button" class="btn btn-primary">Ver mas</button>
+                    </div>
+                </div>
 
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Barro</h5>
-                        <p class="card-text">Tenemos los mejores diseños de barro para que adornes tu casa o lugar de trabajo y junto a ellos con los mejores diseños.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <button type="button" class="btn btn-primary">Ver mas</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Textiles</h5>
-                        <p class="card-text">Excelentes diseños de textiles en cobijas, como tambien en camisas de manta.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        <button type="button" class="btn btn-primary">Ver mas</button>
-                    </div>
-                </div>
-                <div class="card-group">
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Pinturas</h5>
-                            <p class="card-text">De los mejores artistas de la pintura y en diferentes estucturas.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <button type="button" class="btn btn-primary">Ver mas</button>
 
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Yute</h5>
-                            <p class="card-text">Bolsos 100% artesanales con la mejor textura y una excelente calidad.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <button type="button" class="btn btn-primary">Ver mas</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wioAwiZFD7_hDLCQu_zhT4wghh_VGbJrW_1QbN4ZAhl9Bzhh" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Cafe</h5>
-                            <p class="card-text">Cafe 100% de altura y el mejor cafe de todo nuestro pais</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            <button type="button" class="btn btn-primary">Ver mas</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-group">
-
-                    <div class="card">
-
-                    </div>
-                </div>
             </div>
+            <script>
+                var limite;
+                for (limite = 0; limite < 15; limite++) {
+            </script>
 
+
+
+            <script>
+                };
+            </script>
+            <div class="col-3"></div>
         </div>
-        <script>
-            var limite;
-            for (limite = 0; limite < 15; limite++) {
-        </script>
-
-
-
-        <script>
-            };
-        </script>
-        <div class="col-3"></div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div id="resultado2"></div>
-        <div class="col-3"></div>
-        <div class="col-12">
-            <div id="resultado" class="alert alert-light" role="alert">
+    <div class="container">
+        <div class="row">
+            <div id="resultado2"></div>
+            <div class="col-3"></div>
+            <div class="col-12">
+                <div id="resultado" class="alert alert-light" role="alert">
+                </div>
             </div>
         </div>
     </div>
