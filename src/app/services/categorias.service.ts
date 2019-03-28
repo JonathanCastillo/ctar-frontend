@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CategoriasService {
-<<<<<<< HEAD
   private categorias: any[] = [
     { nombre: 'Textil',
     descripcion: 'Camiseta de manta, con finos bordados hechos a mano',
@@ -31,8 +30,4 @@ export class CategoriasService {
       getCategorias() {
         return this.categorias;
         }
-=======
-
-  constructor() { }
->>>>>>> e5744fd3082ede5ce6ec1c8b610938032ea6e6d7
 }
